@@ -171,7 +171,7 @@ elif menu == "🕰 Exploración histórica":
                     color_continuous_scale='blues',
                     title=f"Ubicación del evento: {row['Country']}"
                 )
-                st.plotly_chart(mapa, use_container_width=True)
+                st.plotly_chart(mapa, use_container_width=True, key=f"mapa_{row['Name of Incident']}")
 
 # --- 5. Asistente histórico con ChatGPT ---
 elif menu == "🤖 Asistente histórico (GPT)":
